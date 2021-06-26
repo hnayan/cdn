@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+  
+  
+   <listeners>
+       <listener class-name="com.cdn.utils.Listner" />
+   </listeners>
+  <parameter name ="platformName" value ="Android"/>
+  <parameter name ="platformVersion" value ="11.0"/>
+  <parameter name ="deviceName" value ="RZ8N810682Y"/>
+  
+  <test name="Tests">
+  
+    <classes>
+      <class name="tests.WelcomeTest"/>
+      <class name="tests.LoginTest"/>
+      <class name="tests.CheckoutTest"/> 
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
