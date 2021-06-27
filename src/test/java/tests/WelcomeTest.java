@@ -13,19 +13,19 @@ import com.cdn.utils.BaseClass;
 public class WelcomeTest extends BaseClass {
 	LoginPage loginPage;
 	WelcomePage welcomePage;
-	
+
 	@BeforeMethod
-	  public void beforeMethod(Method m) {
-		  loginPage = new LoginPage();
-		  welcomePage = new WelcomePage();
-	  }
-	
+	public void beforeMethod(Method m) {
+		loginPage = new LoginPage();
+		welcomePage = new WelcomePage();
+	}
 
 
-  @Test
-  public void scrollWelcomePageImages() {
-	  welcomePage.scrollAllImages();
-	  Assert.assertTrue(welcomePage.validateWelcomePageLanding(),"Welcome page is not displayed successfully");
-  }
+
+	@Test
+	public void scrollWelcomePageImages() {
+		welcomePage.scrollAllImages();
+		Assert.assertTrue(welcomePage.validateWelcomePageLanding(),"Welcome page is not displayed successfully");
+	}
 
 }

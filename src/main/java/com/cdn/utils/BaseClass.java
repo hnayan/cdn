@@ -90,7 +90,7 @@ public class BaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public String getAttribute(MobileElement element,String attribute) {
@@ -101,7 +101,7 @@ public class BaseClass {
 			e.printStackTrace();
 			return "Attribute is invalid" ;
 		}
-		
+
 
 	}
 
@@ -181,19 +181,19 @@ public class BaseClass {
 		LEFT,
 		RIGHT;
 	}
-	
+
 	public static void captureScreenShots() {
-        try {
-        	String folder_name="screenshotCDN";
-            File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            SimpleDateFormat df=new  SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
-            String file_name=df.format(new Date())+".png";
-            FileUtils.copyFile(file, new File("./report/"+ file_name));
-        	}catch(Exception e) {
-        		e.printStackTrace();
-        	}
-		
-    }
+		try {
+			String folder_name="screenshotCDN";
+			File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			SimpleDateFormat df=new  SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
+			String file_name=df.format(new Date())+".png";
+			FileUtils.copyFile(file, new File("./report/"+ file_name));
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 
 	@AfterMethod
 	public void tearDown() {
