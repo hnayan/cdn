@@ -16,7 +16,7 @@
   <test name="Login Page Tests">
   <parameter name ="platformName" value ="Android"/>
   <parameter name ="platformVersion" value ="9.0"/>
-  <parameter name ="deviceName" value ="RZ8N810682Y"/>
+  <parameter name ="deviceName" value ="device2"/>
     <classes>
       <class name="tests.LoginTest"/>
      
@@ -26,7 +26,7 @@
    <test name="Checkout Page Tests">
   <parameter name ="platformName" value ="Android"/>
   <parameter name ="platformVersion" value ="10.0"/>
-  <parameter name ="deviceName" value ="RZ8N810682Y"/>
+  <parameter name ="deviceName" value ="device3"/>
     <classes>
       <class name="tests.CheckoutTest"/>
     </classes>
